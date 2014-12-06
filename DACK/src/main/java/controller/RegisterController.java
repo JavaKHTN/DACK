@@ -8,22 +8,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import form.Contact;
+import form.Register;
 
 
 @Controller
 @SessionAttributes
-public class ContactController {
+public class RegisterController {
 	@RequestMapping(value="/addContact",method = RequestMethod.POST)
-	public String addContact(@ModelAttribute("contact")
-		Contact contact, BindingResult result){
+	
+	public String addContact(@ModelAttribute("register")
+		Register contact, BindingResult result){
 		System.out.println("First Name:" + contact.getFirstname() + 
 				"Last Name:"+ contact.getLastname());
-		return "redirect:contacts.html";
+		return "redirect:registers.html";
 	}
 	
-	@RequestMapping("/contacts")
+	@RequestMapping("/registers")
 	public ModelAndView showContacts(){
-		return new ModelAndView("contact","command", new Contact());
+		return new ModelAndView("register","command", new Register());
 	}
 }

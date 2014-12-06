@@ -6,8 +6,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title><tiles:insertAttribute name="title" ignore="true" /></title>
 	</head>
-	<body>
-		<table border="1" cellpadding="2" cellspacing="2" align="center">
+	<body >
+		<table border="1" cellpadding="0" cellspacing="2" align="center">
 		    <tr>
 		        <td height="250" width="1160" colspan="2"><tiles:insertAttribute name="header" />
 		        </td>
