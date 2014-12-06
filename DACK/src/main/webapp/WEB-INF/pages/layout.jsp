@@ -6,18 +6,17 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title><tiles:insertAttribute name="title" ignore="true" /></title>
 	</head>
-	<body>
-		<table border="1" cellpadding="2" cellspacing="2" align="center">
+	<body >
+		<table border="1" cellpadding="0" cellspacing="2" align="center">
 		    <tr>
-		        <td height="250" width="1160" colspan="2"><tiles:insertAttribute name="header" />
-		        </td>
+		        <td height="150" width="100%" colspan="2" ><tiles:insertAttribute name="header" /></td>
 		    </tr>
 		    <tr>
-		        <td height="960" width="150"><tiles:insertAttribute name="menu" /></td>
-		        <td width="350"><tiles:insertAttribute name="body" /></td>
+		        <td height="300" width="20%"><tiles:insertAttribute name="menu" /></td>
+		        <td height="300" width="80%"><tiles:insertAttribute name="body" /></td>
 		    </tr>
 		    <tr>
-		        <td height="140" colspan="2"><tiles:insertAttribute name="footer" />
+		        <td height="150" width="100%" colspan="2"><tiles:insertAttribute name="footer" />
 		        </td>
 		    </tr>
 		</table>
